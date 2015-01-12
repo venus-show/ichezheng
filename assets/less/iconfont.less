@@ -1,0 +1,44 @@
+//
+// iconfont
+// 基于淘宝公共字体图标服务 |  http://www.ui-icon.cn/
+//
+//example
+// <a href="#"><span class="ui-icons ui-icons-home"></span> Star</a>
+//
+// Variables
+// =============================================================================
+@icon-font-path:          "../fonts/";
+@icon-font-name:          "iconfont";
+@icon-font-svg-id:        "iconfont";
+
+/* ==========================================================================
+   Component: liveapp
+ ============================================================================ */
+
+ @font-face {
+  font-family: 'iconfont';
+src: url('http://at.alicdn.com/t/font_1420623582_202513.eot'); 
+  src: url('http://at.alicdn.com/t/font_1420623582_202513.eot?#iefix') format('embedded-opentype'), 
+  url('http://at.alicdn.com/t/font_1420623582_202513.woff') format('woff'), 
+  url('http://at.alicdn.com/t/font_1420623582_202513.ttf') format('truetype'), 
+  url('http://at.alicdn.com/t/font_1420623582_202513.svg#iconfont') format('svg'); 
+}
+
+// Catchall baseclass
+.icons {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'iconfont';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Individual icons
+.icons-home                   { &:before { content: "\e600"; } }
+.icons-back                   { &:before { content: "\e601"; } }
+.icons-more                   { &:before { content: "\e602"; } }
+.icons-down                   { &:before { content: "\e603"; } }

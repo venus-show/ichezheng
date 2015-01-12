@@ -1,0 +1,129 @@
+
+// Write Your Css
+// LESS related
+@import "variables.less";
+@import "mixins.less";
+
+
+// widget - liveapp
+.ui-liveapp{
+	top: 49px;
+	.ui-liveapp-page {
+		.tt {
+			position: absolute;
+			width: 100%;
+			top: 16px;
+			text-align: center;
+		}
+		.txt {
+			position: absolute;
+			width: 100%;
+			top: 50px;
+			padding: 20px;
+			font-size: 12px;
+			text-align: center;
+		}
+		.goods {
+			width: 100%;
+			height: 20%;
+			top: 30%;
+			position: absolute;
+		}
+		&.ui-liveapp-page1 {
+			background: #fff;
+		}
+		&.ui-liveapp-page2 {
+			background: #f1f1f1;
+		}
+	}
+}
+
+// widget - header
+.ui-header-default {
+	background: rgba(255, 255, 255, .9);
+	border-bottom: 1px solid #c3c3c3;
+	.ui-header-nav > a{color: #000;}
+	.btn-arrow{.arrow(#000,10px,2px,135deg)}
+}
+
+// widget - menu
+.ui-menu{
+	top:49px;
+	position: fixed;
+	// transform:scaleY(0);
+	height: 0;
+	overflow: hidden;
+	.ui-menu-nav {
+		background: #3390e3;
+		box-shadow: 0 0 0;
+		.z-active > a:before{border-bottom-color: #fff;}
+		> .nav-item > a{
+			color: #fff;
+		}
+	}
+}
+
+// webview 车型列表
+.c-carlist{
+	position: relative;
+	background: #DBDBDB;
+	top:50px;
+	.brand-box{
+		margin-bottom: 10px;
+		background: #fff;
+		.flexbox;
+		.name{
+			// ---文字水平垂直居中---
+			justify-content:center;
+			align-items:center;
+			display: flex;
+			// --- end ---
+			width: 80px;
+			padding: 0;
+			margin: 0;
+			border-right: 1px solid #dcdcdc;
+			font-size: 14px;
+		}
+		.model{
+			.flex(1);
+			overflow: hidden;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			font-size: 12px;
+			li{
+				.text-overflow();
+				margin-bottom: -1px;
+				margin-right: 0px;
+				padding: 10px 0;
+				border-right: #dcdcdc dotted 1px;
+				border-bottom: #dcdcdc dotted 1px;
+			}
+		}
+	}
+}
+// 常见问题,安装说明
+.c-question,.c-install{
+	top:50px;
+	position: relative;
+	padding: 20px 15px;
+	h1{
+		font-size: 16px;
+	}
+	p{
+		font-size: 14px;
+	}
+	.step{
+		.flexbox;
+		.txt{
+			.flex(1);
+			display: flex;
+			padding: 0 10px;
+			align-items:center;
+			justify-content:center;
+		}
+		.pic{
+			.flex(1);
+		}
+	}
+}
