@@ -269,6 +269,15 @@ var Msize = $(".ui-liveapp-page").size(), 	//页面的数目
 		$(".ui-liveapp-page").eq(page_n-1).removeClass("show active").addClass("hide");
 		$(".ui-liveapp-page").eq(newM-1).removeClass("active hide").addClass("show");
 		
+		TouchSlide({ 
+			slideCell:"#J_slide",
+			titCell:".ui-slide-hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+			mainCell:".ui-slide-bd ul", 
+			effect:"leftLoop", 
+			autoPlay:false,//自动播放
+			autoPage:false //自动分页
+		});
+		$('.page-cont').height(v_h)
 		// 滑动成功加载多面的图片
 		//lazy_bigP();
 		

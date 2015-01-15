@@ -46,19 +46,16 @@
 
 //---------------------------------------------------------------------------
 */
-.ui-liveapp {
-  top: 49px;
-}
 .ui-liveapp .ui-liveapp-page .tt {
   position: absolute;
   width: 100%;
-  top: 16px;
+  top: 55px;
   text-align: center;
 }
 .ui-liveapp .ui-liveapp-page .txt {
   position: absolute;
   width: 100%;
-  top: 50px;
+  top: 80px;
   padding: 20px;
   font-size: 12px;
   text-align: center;
@@ -219,4 +216,8 @@
   -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
+}
+.c-question .step .pic img,
+.c-install .step .pic img {
+  width: 100%;
 }
