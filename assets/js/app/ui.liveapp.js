@@ -34,7 +34,8 @@ var Msize = $(".ui-liveapp-page").size(), 	//页面的数目
 		'dpic':{num:0,id:0}
 	};   
 
-
+	var sliderPage = [2];			//需要slide的页面
+ 
 /* 
 ** 单页切换 各个元素fixed 控制body高度 
 */
@@ -261,6 +262,7 @@ var Msize = $(".ui-liveapp-page").size(), 	//页面的数目
 /*
 ** 切换成功的函数
 */
+
 	function success(){
 		/*
 		** 切换成功回调的函数
@@ -268,15 +270,19 @@ var Msize = $(".ui-liveapp-page").size(), 	//页面的数目
 		//修改完成后的状态
 		$(".ui-liveapp-page").eq(page_n-1).removeClass("show active").addClass("hide");
 		$(".ui-liveapp-page").eq(newM-1).removeClass("active hide").addClass("show");
-		
-		TouchSlide({ 
-			slideCell:"#J_slide",
+		var currentPage = $('.ui-liveapp-page'+newM);
+		if(sliderPage.indexOf(parseInt(newM)) > -1 && !currentPage[0].dataset.slider){
+			TouchSlide({ 
+			slideCell:"#J_slide"+newM,
 			titCell:".ui-slide-hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
 			mainCell:".ui-slide-bd ul", 
 			effect:"leftLoop", 
 			autoPlay:false,//自动播放
-			autoPage:false //自动分页
-		});
+			autoPage:true //自动分页
+		  });
+		 currentPage[0].dataset.slider = '1';
+		}
+		
 		$('.page-cont').height(v_h)
 		// 滑动成功加载多面的图片
 		//lazy_bigP();

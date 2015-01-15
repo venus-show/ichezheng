@@ -4,5 +4,5 @@ TouchSlide({
 	mainCell:".ui-slide-bd ul", 
 	effect:"leftLoop", 
 	autoPlay:false,//自动播放
-	autoPage:false //自动分页
+	autoPage:true //自动分页
 });

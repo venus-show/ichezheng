@@ -46,34 +46,93 @@
 
 //---------------------------------------------------------------------------
 */
-.ui-liveapp .ui-liveapp-page .tt {
-  position: absolute;
-  width: 100%;
-  top: 55px;
-  text-align: center;
+.ui-liveapp {
+  top: 49px;
+  margin-bottom: -50px;
+}
+.ui-liveapp .ui-slide.ui-slide-btn .next,
+.ui-liveapp .ui-slide.ui-slide-btn .prev {
+  background: rgba(255, 255, 255, 0);
+}
+.ui-liveapp .ui-slide.ui-slide-btn .next:before,
+.ui-liveapp .ui-slide.ui-slide-btn .prev:before {
+  border-color: #A8A8A8;
+}
+.ui-liveapp .ui-slide.ui-slide-btn .ui-slide-hd {
+  bottom: 70px;
+}
+.ui-liveapp .ui-slide.ui-slide-btn .ui-slide-hd li {
+  width: 8px;
+  height: 8px;
+  border-width: 0;
+  margin-left: 8px;
 }
 .ui-liveapp .ui-liveapp-page .txt {
-  position: absolute;
   width: 100%;
-  top: 80px;
-  padding: 20px;
-  font-size: 12px;
+  padding: 0 30px;
   text-align: center;
+}
+.ui-liveapp .ui-liveapp-page .txt p,
+.ui-liveapp .ui-liveapp-page .txt h1 {
+  margin-bottom: 10px;
 }
 .ui-liveapp .ui-liveapp-page .goods {
   width: 100%;
-  height: 20%;
-  top: 30%;
   position: absolute;
 }
+.ui-liveapp .ui-liveapp-page .goods img {
+  width: 100%;
+}
 .ui-liveapp .ui-liveapp-page.ui-liveapp-page1 {
-  background: #fff;
+  background: #1D1D1D;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page1 .txt {
+  color: #fff;
+  padding: 0;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page1 .tt {
+  color: #00d7d8;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page1 .intro1 {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page1 .intro2 {
+  font-size: 12px;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page1 .intro3 {
+  width: 100px;
+  font-size: 16px;
+  padding: 0;
+  margin: 0 auto;
+  color: #00d7d8;
+  border-radius: 3px;
+  line-height: 40px;
+  border: 1px solid #00d7d8;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page1 .intro4 {
+  font-size: 12px;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page1 .goods {
+  bottom: 10%;
 }
 .ui-liveapp .ui-liveapp-page.ui-liveapp-page2 {
-  background: #f1f1f1;
+  background: #f4f7f7;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page2 .tt {
+  margin-top: 20px;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page2 .intro1 {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page2 .goods {
+  bottom: 30%;
 }
 .ui-header-default {
   background: rgba(255, 255, 255, 0.9);
+  height: 50px;
+  line-height: 50px;
   border-bottom: 1px solid #c3c3c3;
 }
 .ui-header-default .ui-header-nav > a {
@@ -90,7 +149,7 @@
   transform: rotate(135deg);
 }
 .ui-menu {
-  top: 49px;
+  top: 50px;
   position: fixed;
   height: 0;
   overflow: hidden;
