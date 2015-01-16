@@ -57,9 +57,10 @@
 .ui-liveapp .ui-slide.ui-slide-btn .next:before,
 .ui-liveapp .ui-slide.ui-slide-btn .prev:before {
   border-color: #A8A8A8;
+  opacity: 0.5;
 }
 .ui-liveapp .ui-slide.ui-slide-btn .ui-slide-hd {
-  bottom: 70px;
+  bottom: 100px;
 }
 .ui-liveapp .ui-slide.ui-slide-btn .ui-slide-hd li {
   width: 8px;
@@ -82,6 +83,9 @@
 }
 .ui-liveapp .ui-liveapp-page .goods img {
   width: 100%;
+}
+.ui-liveapp .ui-liveapp-page .tt2 {
+  color: #A6A6A6;
 }
 .ui-liveapp .ui-liveapp-page.ui-liveapp-page1 {
   background: #1D1D1D;
@@ -127,6 +131,76 @@
   font-size: 12px;
 }
 .ui-liveapp .ui-liveapp-page.ui-liveapp-page2 .goods {
+  bottom: 30%;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page2 .goods-3 {
+  bottom: 15%;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page3 {
+  background: #ffffff;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page3 .tt {
+  margin-top: 20px;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page3 .tt3 {
+  font-size: 14px;
+  margin-top: 20px;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page3 .intro1 {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page3 .goods {
+  bottom: 30%;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page3 .goods-2 {
+  top: 0%;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page4 {
+  background: #f4f7f7;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page4 .tt {
+  margin-top: 20px;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page4 .intro1 {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page4 .goods {
+  bottom: 30%;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page5 {
+  background: #ffffff;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page5 .tt {
+  margin-top: 20px;
+  color: #00d7d8;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page5 .tt3 {
+  margin-top: 20px;
+  color: #000;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page5 .intro1 {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page5 .goods {
+  bottom: 30%;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page5 .goods-2 {
+  bottom: 10%;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page6 {
+  background: #ffffff;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page6 .tt {
+  margin-top: 20px;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page6 .intro1 {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.ui-liveapp .ui-liveapp-page.ui-liveapp-page6 .goods {
   bottom: 30%;
 }
 .ui-header-default {

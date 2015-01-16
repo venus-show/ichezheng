@@ -34,7 +34,7 @@ var Msize = $(".ui-liveapp-page").size(), 	//页面的数目
 		'dpic':{num:0,id:0}
 	};   
 
-	var sliderPage = [2];			//需要slide的页面
+	var sliderPage = [2,3,5];			//需要slide的页面
  
 /* 
 ** 单页切换 各个元素fixed 控制body高度 
